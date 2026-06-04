@@ -1,0 +1,15 @@
+{
+  "method": "Cube (Deville & Tillé 2004)",
+  "date": "2026-05-09T14:38:44.752493",
+  "n_results": 80,
+  "n_configs": 8,
+  "key_metrics": {
+    "balance_max_mean": 1.372646,
+    "balance_mean_mean": 0.436264,
+    "bias_abs_mean": 0.040417,
+    "rmse": 0.056787,
+    "pct_frac_gt0": 1.0,
+    "n_frac_mean_when_gt0": 3.5
+  },
+  "note": "Ces métriques constituent la baseline à améliorer avec la Méthode de la Sphère (en cours de développement)."
+}

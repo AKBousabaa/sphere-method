@@ -1,0 +1,308 @@
+
+  [STANDARD MODE]
+
+─────────────────────────────────────────────────────────────────
+  Config: N=50  p=10  f=0.4  type=correlated  alpha=0.2  R=5000
+  Design: uniform-pi+binary-y
+─────────────────────────────────────────────────────────────────
+  Fixed population (seed=2026): N=50, n=20, 1225 pairs
+  p_true = 0.6000
+  Running 5000 replications...
+    Replication     0/5000  (   0%)  ETA: 0.0min    Replication   250/5000  (   5%)  ETA: 1.8min    Replication   500/5000  (  10%)  ETA: 1.9min    Replication   750/5000  (  15%)  ETA: 1.9min    Replication  1000/5000  (  20%)  ETA: 1.9min    Replication  1250/5000  (  25%)  ETA: 1.8min    Replication  1500/5000  (  30%)  ETA: 1.6min    Replication  1750/5000  (  35%)  ETA: 1.5min    Replication  2000/5000  (  40%)  ETA: 1.4min    Replication  2250/5000  (  45%)  ETA: 1.2min    Replication  2500/5000  (  50%)  ETA: 1.1min    Replication  2750/5000  (  55%)  ETA: 1.0min    Replication  3000/5000  (  60%)  ETA: 0.9min    Replication  3250/5000  (  65%)  ETA: 0.8min    Replication  3500/5000  (  70%)  ETA: 0.7min    Replication  3750/5000  (  75%)  ETA: 0.5min    Replication  4000/5000  (  80%)  ETA: 0.4min    Replication  4250/5000  (  85%)  ETA: 0.3min    Replication  4500/5000  (  90%)  ETA: 0.2min    Replication  4750/5000  (  95%)  ETA: 0.1min    5000 replications completed in 131.8s                      
+
+=================================================================
+  RESULTS  N=50  p=10  f=0.4  type=correlated  alpha=0.2  R=5000
+  1225 pairs (i,j) analysed
+=================================================================
+
+  Q1 — Fraction of pairs where pi_ij^Sphere <= pi_ij^Cube:
+    Sphere < Cube :  46.3%
+    Sphere = Cube :   1.1%
+    Sphere > Cube :  52.6%
+    Mean delta (S-C) : +0.00064
+
+  Q2 — Contrast (y_i/pi_i - y_j/pi_j)^2 x delta:
+    Corr(contrast, delta) : -0.0138
+    [expected: negative — large contrasts -> more negative delta]
+    Mean delta (top 25% contrasts) : +0.00075
+    Mean delta (top 10% contrasts) : +0.00106
+    % Sphere < Cube (top 25% contrast) : 44.8%
+
+  Q3 — Covariances pi_ij - pi_i * pi_j:
+    Cube   : mean = -0.00036  (% negative: 51.2%)
+    Sphere : mean = +0.00028  (% negative: 51.3%)
+
+  Q4 — Auxiliary distance sum(A_ki - A_kj)^2 vs covariance:
+    Corr(aux.dist, cov.Cube)   : +0.2051
+    Corr(aux.dist, cov.Sphere) : +0.1928
+    [expected Sphere: negative — distant pairs -> more negative cov]
+
+  Q5 — Empirical SYG variance sum_{i<j} [-(pi_ij-pi_i*pi_j)(contrast)]:
+    Cube   : -6.430000
+    Sphere : -8.461250
+    Delta  : +31.59%  (reduction)
+
+  CSV saved -> /Users/abdelkader/Documents/91 - PhD/919 - Tex/00 - Articles/03 - Misc/03 - Cube to Sphere/python/step03/../outputs/pi_ij_pairs_N50_p10_f4__correlated__a2.csv
+  Generating figures...
+    Figure Q1 -> /Users/abdelkader/Documents/91 - PhD/919 - Tex/00 - Articles/03 - Misc/03 - Cube to Sphere/python/step03/../outputs/figures/Q1_piij_scatter_N50_p10_f4__correlated__a2.pdf
+    Figure Q2 -> /Users/abdelkader/Documents/91 - PhD/919 - Tex/00 - Articles/03 - Misc/03 - Cube to Sphere/python/step03/../outputs/figures/Q2_contrast_delta_N50_p10_f4__correlated__a2.pdf
+    Figure Q3 -> /Users/abdelkader/Documents/91 - PhD/919 - Tex/00 - Articles/03 - Misc/03 - Cube to Sphere/python/step03/../outputs/figures/Q3_covariances_N50_p10_f4__correlated__a2.pdf
+    Figure Q4 -> /Users/abdelkader/Documents/91 - PhD/919 - Tex/00 - Articles/03 - Misc/03 - Cube to Sphere/python/step03/../outputs/figures/Q4_aux_dist_N50_p10_f4__correlated__a2.pdf
+
+─────────────────────────────────────────────────────────────────
+  Config: N=50  p=5  f=0.4  type=mixed  alpha=0.2  R=5000
+  Design: uniform-pi+binary-y
+─────────────────────────────────────────────────────────────────
+  Fixed population (seed=2026): N=50, n=20, 1225 pairs
+  p_true = 0.6000
+  Running 5000 replications...
+    Replication     0/5000  (   0%)  ETA: 0.0min    Replication   250/5000  (   5%)  ETA: 1.5min    Replication   500/5000  (  10%)  ETA: 1.4min    Replication   750/5000  (  15%)  ETA: 1.2min    Replication  1000/5000  (  20%)  ETA: 1.1min    Replication  1250/5000  (  25%)  ETA: 1.0min    Replication  1500/5000  (  30%)  ETA: 0.9min    Replication  1750/5000  (  35%)  ETA: 0.8min    Replication  2000/5000  (  40%)  ETA: 0.7min    Replication  2250/5000  (  45%)  ETA: 0.7min    Replication  2500/5000  (  50%)  ETA: 0.6min    Replication  2750/5000  (  55%)  ETA: 0.5min    Replication  3000/5000  (  60%)  ETA: 0.5min    Replication  3250/5000  (  65%)  ETA: 0.4min    Replication  3500/5000  (  70%)  ETA: 0.4min    Replication  3750/5000  (  75%)  ETA: 0.3min    Replication  4000/5000  (  80%)  ETA: 0.2min    Replication  4250/5000  (  85%)  ETA: 0.2min    Replication  4500/5000  (  90%)  ETA: 0.1min    Replication  4750/5000  (  95%)  ETA: 0.1min    5000 replications completed in 72.4s                      
+
+=================================================================
+  RESULTS  N=50  p=5  f=0.4  type=mixed  alpha=0.2  R=5000
+  1225 pairs (i,j) analysed
+=================================================================
+
+  Q1 — Fraction of pairs where pi_ij^Sphere <= pi_ij^Cube:
+    Sphere < Cube :  53.1%
+    Sphere = Cube :   1.0%
+    Sphere > Cube :  45.9%
+    Mean delta (S-C) : -0.00051
+
+  Q2 — Contrast (y_i/pi_i - y_j/pi_j)^2 x delta:
+    Corr(contrast, delta) : +0.0412
+    [expected: negative — large contrasts -> more negative delta]
+    Mean delta (top 25% contrasts) : -0.00027
+    Mean delta (top 10% contrasts) : -0.00030
+    % Sphere < Cube (top 25% contrast) : 52.0%
+
+  Q3 — Covariances pi_ij - pi_i * pi_j:
+    Cube   : mean = -0.00380  (% negative: 64.5%)
+    Sphere : mean = -0.00431  (% negative: 65.2%)
+
+  Q4 — Auxiliary distance sum(A_ki - A_kj)^2 vs covariance:
+    Corr(aux.dist, cov.Cube)   : +0.2670
+    Corr(aux.dist, cov.Sphere) : +0.1892
+    [expected Sphere: negative — distant pairs -> more negative cov]
+
+  Q5 — Empirical SYG variance sum_{i<j} [-(pi_ij-pi_i*pi_j)(contrast)]:
+    Cube   : +7.572500
+    Sphere : +8.426250
+    Delta  : -11.27%  (increase)
+
+  CSV saved -> /Users/abdelkader/Documents/91 - PhD/919 - Tex/00 - Articles/03 - Misc/03 - Cube to Sphere/python/step03/../outputs/pi_ij_pairs_N50_p5_f4__mixed__a2.csv
+  Generating figures...
+    Figure Q1 -> /Users/abdelkader/Documents/91 - PhD/919 - Tex/00 - Articles/03 - Misc/03 - Cube to Sphere/python/step03/../outputs/figures/Q1_piij_scatter_N50_p5_f4__mixed__a2.pdf
+    Figure Q2 -> /Users/abdelkader/Documents/91 - PhD/919 - Tex/00 - Articles/03 - Misc/03 - Cube to Sphere/python/step03/../outputs/figures/Q2_contrast_delta_N50_p5_f4__mixed__a2.pdf
+    Figure Q3 -> /Users/abdelkader/Documents/91 - PhD/919 - Tex/00 - Articles/03 - Misc/03 - Cube to Sphere/python/step03/../outputs/figures/Q3_covariances_N50_p5_f4__mixed__a2.pdf
+    Figure Q4 -> /Users/abdelkader/Documents/91 - PhD/919 - Tex/00 - Articles/03 - Misc/03 - Cube to Sphere/python/step03/../outputs/figures/Q4_aux_dist_N50_p5_f4__mixed__a2.pdf
+
+─────────────────────────────────────────────────────────────────
+  Config: N=50  p=2  f=0.4  type=mixed  alpha=0.2  R=5000
+  Design: uniform-pi+binary-y
+─────────────────────────────────────────────────────────────────
+  Fixed population (seed=2026): N=50, n=20, 1225 pairs
+  p_true = 0.6000
+  Running 5000 replications...
+    Replication     0/5000  (   0%)  ETA: 0.0min    Replication   250/5000  (   5%)  ETA: 1.0min    Replication   500/5000  (  10%)  ETA: 1.0min    Replication   750/5000  (  15%)  ETA: 0.9min    Replication  1000/5000  (  20%)  ETA: 0.9min    Replication  1250/5000  (  25%)  ETA: 0.8min    Replication  1500/5000  (  30%)  ETA: 0.7min    Replication  1750/5000  (  35%)  ETA: 0.7min    Replication  2000/5000  (  40%)  ETA: 0.6min    Replication  2250/5000  (  45%)  ETA: 0.6min    Replication  2500/5000  (  50%)  ETA: 0.5min    Replication  2750/5000  (  55%)  ETA: 0.5min    Replication  3000/5000  (  60%)  ETA: 0.4min    Replication  3250/5000  (  65%)  ETA: 0.4min    Replication  3500/5000  (  70%)  ETA: 0.3min    Replication  3750/5000  (  75%)  ETA: 0.3min    Replication  4000/5000  (  80%)  ETA: 0.2min    Replication  4250/5000  (  85%)  ETA: 0.2min    Replication  4500/5000  (  90%)  ETA: 0.1min    Replication  4750/5000  (  95%)  ETA: 0.1min    5000 replications completed in 62.8s                      
+
+=================================================================
+  RESULTS  N=50  p=2  f=0.4  type=mixed  alpha=0.2  R=5000
+  1225 pairs (i,j) analysed
+=================================================================
+
+  Q1 — Fraction of pairs where pi_ij^Sphere <= pi_ij^Cube:
+    Sphere < Cube :  43.3%
+    Sphere = Cube :   1.2%
+    Sphere > Cube :  55.4%
+    Mean delta (S-C) : +0.00094
+
+  Q2 — Contrast (y_i/pi_i - y_j/pi_j)^2 x delta:
+    Corr(contrast, delta) : +0.0021
+    [expected: negative — large contrasts -> more negative delta]
+    Mean delta (top 25% contrasts) : +0.00081
+    Mean delta (top 10% contrasts) : -0.00016
+    % Sphere < Cube (top 25% contrast) : 43.8%
+
+  Q3 — Covariances pi_ij - pi_i * pi_j:
+    Cube   : mean = -0.00268  (% negative: 61.6%)
+    Sphere : mean = -0.00174  (% negative: 57.7%)
+
+  Q4 — Auxiliary distance sum(A_ki - A_kj)^2 vs covariance:
+    Corr(aux.dist, cov.Cube)   : +0.0144
+    Corr(aux.dist, cov.Sphere) : -0.1731
+    [expected Sphere: negative — distant pairs -> more negative cov]
+
+  Q5 — Empirical SYG variance sum_{i<j} [-(pi_ij-pi_i*pi_j)(contrast)]:
+    Cube   : +3.768750
+    Sphere : +0.202500
+    Delta  : +94.63%  (reduction)
+
+  CSV saved -> /Users/abdelkader/Documents/91 - PhD/919 - Tex/00 - Articles/03 - Misc/03 - Cube to Sphere/python/step03/../outputs/pi_ij_pairs_N50_p2_f4__mixed__a2.csv
+  Generating figures...
+    Figure Q1 -> /Users/abdelkader/Documents/91 - PhD/919 - Tex/00 - Articles/03 - Misc/03 - Cube to Sphere/python/step03/../outputs/figures/Q1_piij_scatter_N50_p2_f4__mixed__a2.pdf
+    Figure Q2 -> /Users/abdelkader/Documents/91 - PhD/919 - Tex/00 - Articles/03 - Misc/03 - Cube to Sphere/python/step03/../outputs/figures/Q2_contrast_delta_N50_p2_f4__mixed__a2.pdf
+    Figure Q3 -> /Users/abdelkader/Documents/91 - PhD/919 - Tex/00 - Articles/03 - Misc/03 - Cube to Sphere/python/step03/../outputs/figures/Q3_covariances_N50_p2_f4__mixed__a2.pdf
+    Figure Q4 -> /Users/abdelkader/Documents/91 - PhD/919 - Tex/00 - Articles/03 - Misc/03 - Cube to Sphere/python/step03/../outputs/figures/Q4_aux_dist_N50_p2_f4__mixed__a2.pdf
+
+  [OPTION B — non-uniform pi + continuous y]
+
+─────────────────────────────────────────────────────────────────
+  Config: N=50  p=10  f=0.4  type=correlated  alpha=0.2  R=5000
+  Design: nonuniform-pi+continuous-y
+─────────────────────────────────────────────────────────────────
+  Fixed population (seed=2026): N=50, n=20, 1225 pairs
+  p_true = -0.0000
+  Running 5000 replications...
+    Replication     0/5000  (   0%)  ETA: 0.0min    Replication   250/5000  (   5%)  ETA: 1.7min    Replication   500/5000  (  10%)  ETA: 1.7min    Replication   750/5000  (  15%)  ETA: 1.7min    Replication  1000/5000  (  20%)  ETA: 1.6min    Replication  1250/5000  (  25%)  ETA: 1.6min    Replication  1500/5000  (  30%)  ETA: 1.5min    Replication  1750/5000  (  35%)  ETA: 1.4min    Replication  2000/5000  (  40%)  ETA: 1.3min    Replication  2250/5000  (  45%)  ETA: 1.2min    Replication  2500/5000  (  50%)  ETA: 1.1min    Replication  2750/5000  (  55%)  ETA: 1.0min    Replication  3000/5000  (  60%)  ETA: 0.9min    Replication  3250/5000  (  65%)  ETA: 0.8min    Replication  3500/5000  (  70%)  ETA: 0.7min    Replication  3750/5000  (  75%)  ETA: 0.6min    Replication  4000/5000  (  80%)  ETA: 0.4min    Replication  4250/5000  (  85%)  ETA: 0.3min    Replication  4500/5000  (  90%)  ETA: 0.2min    Replication  4750/5000  (  95%)  ETA: 0.1min    5000 replications completed in 134.5s                      
+
+=================================================================
+  RESULTS  N=50  p=10  f=0.4  type=correlated  alpha=0.2  R=5000
+  1225 pairs (i,j) analysed
+=================================================================
+
+  Q1 — Fraction of pairs where pi_ij^Sphere <= pi_ij^Cube:
+    Sphere < Cube :  55.7%
+    Sphere = Cube :   1.8%
+    Sphere > Cube :  42.5%
+    Mean delta (S-C) : -0.00071
+
+  Q2 — Contrast (y_i/pi_i - y_j/pi_j)^2 x delta:
+    Corr(contrast, delta) : +0.0792
+    [expected: negative — large contrasts -> more negative delta]
+    Mean delta (top 25% contrasts) : +0.00048
+    Mean delta (top 10% contrasts) : +0.00032
+    % Sphere < Cube (top 25% contrast) : 49.7%
+
+  Q3 — Covariances pi_ij - pi_i * pi_j:
+    Cube   : mean = -0.00006  (% negative: 52.2%)
+    Sphere : mean = -0.00078  (% negative: 55.0%)
+
+  Q4 — Auxiliary distance sum(A_ki - A_kj)^2 vs covariance:
+    Corr(aux.dist, cov.Cube)   : +0.1981
+    Corr(aux.dist, cov.Sphere) : +0.1787
+    [expected Sphere: negative — distant pairs -> more negative cov]
+
+  Q5 — Empirical SYG variance sum_{i<j} [-(pi_ij-pi_i*pi_j)(contrast)]:
+    Cube   : -33.478770
+    Sphere : -32.991615
+    Delta  : -1.46%  (increase)
+
+  CSV saved -> /Users/abdelkader/Documents/91 - PhD/919 - Tex/00 - Articles/03 - Misc/03 - Cube to Sphere/python/step03/../outputs/pi_ij_pairs_N50_p10_f4__correlated__a2_optB.csv
+  Generating figures...
+    Figure Q1 -> /Users/abdelkader/Documents/91 - PhD/919 - Tex/00 - Articles/03 - Misc/03 - Cube to Sphere/python/step03/../outputs/figures/Q1_piij_scatter_N50_p10_f4__correlated__a2_optB.pdf
+    Figure Q2 -> /Users/abdelkader/Documents/91 - PhD/919 - Tex/00 - Articles/03 - Misc/03 - Cube to Sphere/python/step03/../outputs/figures/Q2_contrast_delta_N50_p10_f4__correlated__a2_optB.pdf
+    Figure Q3 -> /Users/abdelkader/Documents/91 - PhD/919 - Tex/00 - Articles/03 - Misc/03 - Cube to Sphere/python/step03/../outputs/figures/Q3_covariances_N50_p10_f4__correlated__a2_optB.pdf
+    Figure Q4 -> /Users/abdelkader/Documents/91 - PhD/919 - Tex/00 - Articles/03 - Misc/03 - Cube to Sphere/python/step03/../outputs/figures/Q4_aux_dist_N50_p10_f4__correlated__a2_optB.pdf
+
+─────────────────────────────────────────────────────────────────
+  Config: N=50  p=5  f=0.4  type=mixed  alpha=0.2  R=5000
+  Design: nonuniform-pi+continuous-y
+─────────────────────────────────────────────────────────────────
+  Fixed population (seed=2026): N=50, n=20, 1225 pairs
+  p_true = -0.0000
+  Running 5000 replications...
+    Replication     0/5000  (   0%)  ETA: 0.0min    Replication   250/5000  (   5%)  ETA: 1.6min    Replication   500/5000  (  10%)  ETA: 1.5min    Replication   750/5000  (  15%)  ETA: 1.3min    Replication  1000/5000  (  20%)  ETA: 1.2min    Replication  1250/5000  (  25%)  ETA: 1.1min    Replication  1500/5000  (  30%)  ETA: 1.0min    Replication  1750/5000  (  35%)  ETA: 0.9min    Replication  2000/5000  (  40%)  ETA: 0.8min    Replication  2250/5000  (  45%)  ETA: 0.7min    Replication  2500/5000  (  50%)  ETA: 0.7min    Replication  2750/5000  (  55%)  ETA: 0.6min    Replication  3000/5000  (  60%)  ETA: 0.5min    Replication  3250/5000  (  65%)  ETA: 0.4min    Replication  3500/5000  (  70%)  ETA: 0.4min    Replication  3750/5000  (  75%)  ETA: 0.3min    Replication  4000/5000  (  80%)  ETA: 0.3min    Replication  4250/5000  (  85%)  ETA: 0.2min    Replication  4500/5000  (  90%)  ETA: 0.1min    Replication  4750/5000  (  95%)  ETA: 0.1min    5000 replications completed in 75.7s                      
+
+=================================================================
+  RESULTS  N=50  p=5  f=0.4  type=mixed  alpha=0.2  R=5000
+  1225 pairs (i,j) analysed
+=================================================================
+
+  Q1 — Fraction of pairs where pi_ij^Sphere <= pi_ij^Cube:
+    Sphere < Cube :  52.9%
+    Sphere = Cube :   1.2%
+    Sphere > Cube :  45.9%
+    Mean delta (S-C) : -0.00060
+
+  Q2 — Contrast (y_i/pi_i - y_j/pi_j)^2 x delta:
+    Corr(contrast, delta) : -0.1830
+    [expected: negative — large contrasts -> more negative delta]
+    Mean delta (top 25% contrasts) : -0.00262
+    Mean delta (top 10% contrasts) : -0.00419
+    % Sphere < Cube (top 25% contrast) : 65.7%
+
+  Q3 — Covariances pi_ij - pi_i * pi_j:
+    Cube   : mean = -0.00305  (% negative: 60.7%)
+    Sphere : mean = -0.00365  (% negative: 61.8%)
+
+  Q4 — Auxiliary distance sum(A_ki - A_kj)^2 vs covariance:
+    Corr(aux.dist, cov.Cube)   : +0.1849
+    Corr(aux.dist, cov.Sphere) : +0.1340
+    [expected Sphere: negative — distant pairs -> more negative cov]
+
+  Q5 — Empirical SYG variance sum_{i<j} [-(pi_ij-pi_i*pi_j)(contrast)]:
+    Cube   : +32.415027
+    Sphere : +99.875639
+    Delta  : -208.12%  (increase)
+
+  CSV saved -> /Users/abdelkader/Documents/91 - PhD/919 - Tex/00 - Articles/03 - Misc/03 - Cube to Sphere/python/step03/../outputs/pi_ij_pairs_N50_p5_f4__mixed__a2_optB.csv
+  Generating figures...
+    Figure Q1 -> /Users/abdelkader/Documents/91 - PhD/919 - Tex/00 - Articles/03 - Misc/03 - Cube to Sphere/python/step03/../outputs/figures/Q1_piij_scatter_N50_p5_f4__mixed__a2_optB.pdf
+    Figure Q2 -> /Users/abdelkader/Documents/91 - PhD/919 - Tex/00 - Articles/03 - Misc/03 - Cube to Sphere/python/step03/../outputs/figures/Q2_contrast_delta_N50_p5_f4__mixed__a2_optB.pdf
+    Figure Q3 -> /Users/abdelkader/Documents/91 - PhD/919 - Tex/00 - Articles/03 - Misc/03 - Cube to Sphere/python/step03/../outputs/figures/Q3_covariances_N50_p5_f4__mixed__a2_optB.pdf
+    Figure Q4 -> /Users/abdelkader/Documents/91 - PhD/919 - Tex/00 - Articles/03 - Misc/03 - Cube to Sphere/python/step03/../outputs/figures/Q4_aux_dist_N50_p5_f4__mixed__a2_optB.pdf
+
+─────────────────────────────────────────────────────────────────
+  Config: N=50  p=2  f=0.4  type=mixed  alpha=0.2  R=5000
+  Design: nonuniform-pi+continuous-y
+─────────────────────────────────────────────────────────────────
+  Fixed population (seed=2026): N=50, n=20, 1225 pairs
+  p_true = -0.0000
+  Running 5000 replications...
+    Replication     0/5000  (   0%)  ETA: 0.0min    Replication   250/5000  (   5%)  ETA: 1.1min    Replication   500/5000  (  10%)  ETA: 1.0min    Replication   750/5000  (  15%)  ETA: 1.0min    Replication  1000/5000  (  20%)  ETA: 0.9min    Replication  1250/5000  (  25%)  ETA: 0.9min    Replication  1500/5000  (  30%)  ETA: 0.8min    Replication  1750/5000  (  35%)  ETA: 0.8min    Replication  2000/5000  (  40%)  ETA: 0.7min    Replication  2250/5000  (  45%)  ETA: 0.6min    Replication  2500/5000  (  50%)  ETA: 0.6min    Replication  2750/5000  (  55%)  ETA: 0.5min    Replication  3000/5000  (  60%)  ETA: 0.5min    Replication  3250/5000  (  65%)  ETA: 0.4min    Replication  3500/5000  (  70%)  ETA: 0.3min    Replication  3750/5000  (  75%)  ETA: 0.3min    Replication  4000/5000  (  80%)  ETA: 0.2min    Replication  4250/5000  (  85%)  ETA: 0.2min    Replication  4500/5000  (  90%)  ETA: 0.1min    Replication  4750/5000  (  95%)  ETA: 0.1min    5000 replications completed in 68.7s                      
+
+=================================================================
+  RESULTS  N=50  p=2  f=0.4  type=mixed  alpha=0.2  R=5000
+  1225 pairs (i,j) analysed
+=================================================================
+
+  Q1 — Fraction of pairs where pi_ij^Sphere <= pi_ij^Cube:
+    Sphere < Cube :  53.1%
+    Sphere = Cube :   1.6%
+    Sphere > Cube :  45.3%
+    Mean delta (S-C) : -0.00056
+
+  Q2 — Contrast (y_i/pi_i - y_j/pi_j)^2 x delta:
+    Corr(contrast, delta) : -0.0869
+    [expected: negative — large contrasts -> more negative delta]
+    Mean delta (top 25% contrasts) : -0.00188
+    Mean delta (top 10% contrasts) : -0.00163
+    % Sphere < Cube (top 25% contrast) : 60.8%
+
+  Q3 — Covariances pi_ij - pi_i * pi_j:
+    Cube   : mean = -0.00092  (% negative: 55.3%)
+    Sphere : mean = -0.00148  (% negative: 55.5%)
+
+  Q4 — Auxiliary distance sum(A_ki - A_kj)^2 vs covariance:
+    Corr(aux.dist, cov.Cube)   : -0.0832
+    Corr(aux.dist, cov.Sphere) : -0.1319
+    [expected Sphere: negative — distant pairs -> more negative cov]
+
+  Q5 — Empirical SYG variance sum_{i<j} [-(pi_ij-pi_i*pi_j)(contrast)]:
+    Cube   : -7.934109
+    Sphere : +21.648349
+    Delta  : -372.85%  (increase)
+
+  CSV saved -> /Users/abdelkader/Documents/91 - PhD/919 - Tex/00 - Articles/03 - Misc/03 - Cube to Sphere/python/step03/../outputs/pi_ij_pairs_N50_p2_f4__mixed__a2_optB.csv
+  Generating figures...
+    Figure Q1 -> /Users/abdelkader/Documents/91 - PhD/919 - Tex/00 - Articles/03 - Misc/03 - Cube to Sphere/python/step03/../outputs/figures/Q1_piij_scatter_N50_p2_f4__mixed__a2_optB.pdf
+    Figure Q2 -> /Users/abdelkader/Documents/91 - PhD/919 - Tex/00 - Articles/03 - Misc/03 - Cube to Sphere/python/step03/../outputs/figures/Q2_contrast_delta_N50_p2_f4__mixed__a2_optB.pdf
+    Figure Q3 -> /Users/abdelkader/Documents/91 - PhD/919 - Tex/00 - Articles/03 - Misc/03 - Cube to Sphere/python/step03/../outputs/figures/Q3_covariances_N50_p2_f4__mixed__a2_optB.pdf
+    Figure Q4 -> /Users/abdelkader/Documents/91 - PhD/919 - Tex/00 - Articles/03 - Misc/03 - Cube to Sphere/python/step03/../outputs/figures/Q4_aux_dist_N50_p2_f4__mixed__a2_optB.pdf
+
+  Global summary -> /Users/abdelkader/Documents/91 - PhD/919 - Tex/00 - Articles/03 - Misc/03 - Cube to Sphere/python/step03/../outputs/pi_ij_summary.json
+
+================================================================================
+  SUMMARY TABLE — pi_ij: CUBE vs LAYLA SPHERE
+================================================================================
+  Config                                %S<C   r(ctr,d)    dSYG%    cov.S
+  ─────────────────────────────────── ────── ────────── ──────── ────────
+  N=50 p=10 correlated a=0.2           46.3%     -0.014  +31.59% +0.00028
+  N=50 p=5 mixed a=0.2                 53.1%     +0.041  -11.27% -0.00431
+  N=50 p=2 mixed a=0.2                 43.3%     +0.002  +94.63% -0.00174
+  N=50 p=10 correlated a=0.2           55.7%     +0.079   -1.46% -0.00078
+  N=50 p=5 mixed a=0.2                 52.9%     -0.183 -208.12% -0.00365
+  N=50 p=2 mixed a=0.2                 53.1%     -0.087 -372.85% -0.00148
+================================================================================
+
