@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying paper."
+title: "Layla Sphere method: a phase-informed landing algorithm for balanced random sampling"
+authors:
+  - family-names: "Bousabaa"
+    given-names: "Abdelkader"
+    affiliation: "CEPS, University of Paris-Saclay"
+    email: "abdelkader.bousabaa@universite-paris-saclay.fr"
+  - family-names: "Sirolli"
+    given-names: "Rémi"
+    affiliation: "Crédit Agricole CIB"
+    email: "remi.sirolli@gmail.com"
+year: 2026
+license: MIT
+repository-code: "https://github.com/AKBousabaa/sphere-method"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Bousabaa"
+      given-names: "Abdelkader"
+    - family-names: "Sirolli"
+      given-names: "Rémi"
+  title: "The Layla Sphere method: a phase-informed landing algorithm for balanced random sampling"
+  journal: "Biometrika"
+  year: 2026
+  notes: "Submitted"
